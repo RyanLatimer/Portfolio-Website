@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -37,8 +43,8 @@ nav ul li a:hover {
 .intro {
     background: #333;
     color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    text-align: left;
+    padding: 35px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
