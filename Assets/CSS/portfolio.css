@@ -1,0 +1,190 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1e88e5; /* Light blue color on hover */
+}
+
+.container {
+    background: #1f1f1f;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 120px; /* Adjust for fixed header */
+    max-width: 800px;
+    width: 100%;
+}
+
+.project {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-images img {
+    width: 200px; /* Adjust width to make images smaller */
+    border-radius: 8px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    flex: 1;
+}
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.project-content:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-images img {
+    width: 200px; /* Adjust width to make images smaller */
+    border-radius: 8px;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #e0e0e0;
+    flex: 1;
+}
+.waves-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+    width: 200%; /* Double the width for smooth animation */
+    height: auto;
+}
+
+.wave1, .wave2 {
+    animation: moveWaves 20s linear infinite;
+}
+
+.wave1 {
+    animation: waveUpDown1 10s ease-in-out infinite;
+}
+
+.wave2 {
+    animation: waveUpDown2 15s ease-in-out infinite;
+}
+
+@keyframes moveWaves {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes waveUpDown1 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    75% {
+        transform: translateY(15px);
+    }
+}
+
+@keyframes waveUpDown2 {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(20px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    75% {
+        transform: translateY(20px);
+    }
+}
