@@ -32,7 +32,7 @@ body {
 }
 
 .waves path {
-    animation: moveWaves 20s linear infinite, waveUpDown 5s ease-in-out infinite;
+    animation: moveWaves 20s linear infinite, waveUpDown1 10s ease-in-out infinite;
 }
 
 .wave1 {
@@ -68,112 +68,112 @@ body {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-25%);
     }
 }
 
 @keyframes waveUpDown1 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(15px);
+        transform: translateY(15px) translateX(0);
     }
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-15px) translateX(0);
     }
     75% {
-        transform: translateY(15px);
+        transform: translateY(15px) translateX(0);
     }
 }
 
 @keyframes waveUpDown2 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(20px);
+        transform: translateY(20px) translateX(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-20px) translateX(0);
     }
     75% {
-        transform: translateY(20px);
+        transform: translateY(20px) translateX(0);
     }
 }
 
 @keyframes waveUpDown3 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(25px);
+        transform: translateY(25px) translateX(0);
     }
     50% {
-        transform: translateY(-25px);
+        transform: translateY(-25px) translateX(0);
     }
     75% {
-        transform: translateY(25px);
+        transform: translateY(25px) translateX(0);
     }
 }
 
 @keyframes waveUpDown4 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(30px);
+        transform: translateY(30px) translateX(0);
     }
     50% {
-        transform: translateY(-30px);
+        transform: translateY(-30px) translateX(0);
     }
     75% {
-        transform: translateY(30px);
+        transform: translateY(30px) translateX(0);
     }
 }
 
 @keyframes waveUpDown5 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(35px);
+        transform: translateY(35px) translateX(0);
     }
     50% {
-        transform: translateY(-35px);
+        transform: translateY(-35px) translateX(0);
     }
     75% {
-        transform: translateY(35px);
+        transform: translateY(35px) translateX(0);
     }
 }
 
 @keyframes waveUpDown6 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(40px);
+        transform: translateY(40px) translateX(0);
     }
     50% {
-        transform: translateY(-40px);
+        transform: translateY(-40px) translateX(0);
     }
     75% {
-        transform: translateY(40px);
+        transform: translateY(40px) translateX(0);
     }
 }
 
 @keyframes waveUpDown7 {
     0%, 100% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(0);
     }
     25% {
-        transform: translateY(45px);
+        transform: translateY(45px) translateX(0);
     }
     50% {
-        transform: translateY(-45px);
+        transform: translateY(-45px) translateX(0);
     }
     75% {
-        transform: translateY(45px);
+        transform: translateY(45px) translateX(0);
     }
 }
 
