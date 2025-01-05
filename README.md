@@ -5,8 +5,9 @@ Welcome to the High Seas Hack Club Portfolio Website repository! This project co
 ## Features
 
 - **Project Showcase**: Displays a list of my projects with descriptions, technologies used, and links to live demos and GitHub repositories.
-- **About Me**: A section providing information about my background, skills, and interests.
-- **Contact Form**: Allows visitors to get in touch with me directly through the website.
+- **An Essay on Open Source**: A brief essay on how open source has changed my life.
+- **A Keyed Text Encryption App**: A simple app that uses randomly generated keys to encrypt text.
+- **An outline of my journey through learning Blender**: A brief story about how I learned blender.
 
 ## Technologies Used
 
@@ -18,7 +19,6 @@ Welcome to the High Seas Hack Club Portfolio Website repository! This project co
 
 - Navigate through the website to learn more about me and my work.
 - Check out the Projects section to see detailed information about my projects.
-- Use the Contact Form to send me a message.
 
 You can visit the website at: [https://ryanlatimer.github.io/Portfolio-Website](https://ryanlatimer.github.io/Portfolio-Website)
 
