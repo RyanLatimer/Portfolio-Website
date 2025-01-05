@@ -47,7 +47,7 @@ async function encryptText() {
 
 // Function to decrypt text
 async function decryptText() {
-    const encryptedText = document.getElementById("outputText").value;
+    const encryptedText = document.getElementById("inputText").value;
     const key = JSON.parse(document.getElementById("key").value);
     const importedKey = await crypto.subtle.importKey(
         "jwk",
@@ -73,5 +73,5 @@ async function decryptText() {
     );
 
     const decodedText = new TextDecoder().decode(decrypted);
-    document.getElementById("inputText").value = decodedText;
+    document.getElementById("outputText").value = decodedText;
 }
