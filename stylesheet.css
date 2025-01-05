@@ -1,3 +1,6 @@
+/* styles.css */
+
+/* CSS reset to remove default margins and paddings */
 * {
     margin: 0;
     padding: 0;
@@ -5,47 +8,75 @@
 }
 
 body {
-    font-family: Arial sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+    background: #111;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #0f0;
+}
+
+main {
+    padding: 100px 20px 20px; /* Adjust padding to account for fixed header */
+    text-align: center;
 }
 
 .intro {
-    background: #333;
-    color: #fff;
-    text-align: left;
-    padding: 35px 0;
+    background: #111;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+footer {
+    background: #111;
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
